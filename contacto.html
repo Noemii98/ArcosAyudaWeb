@@ -69,23 +69,23 @@
         <h2>Trabaja con Nosotros</h2>
         <p>¿Quieres formar parte de nuestro equipo de monitores o animadores? Déjanos tu CV.</p>
         
-        <form class="cv-form" action="mailto:coordinacionarcosayuda@gmail.com" method="post" enctype="multipart/form-data">
-            <div class="cv-grid">
-                <input type="text" placeholder="Nombre Completo" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-            </div>
-            <div class="cv-grid">
-                <input type="tel" placeholder="Teléfono de Contacto" required>
-                <input type="text" placeholder="Puesto al que aspiras (Ej: Monitor)" required>
-            </div>
-            
-            <label for="cv-file" class="file-upload" style="display: block; cursor: pointer;">
-            <p>📁 Arrastra tu CV aquí o haz clic para buscar archivo (PDF, Word)</p>
-            <input type="file" id="cv-file" style="display: none;" required>
-            </label>
+    <form class="cv-form" action="https://formspree.io/f/TU_CODIGO_DE_FORMSPREE" method="POST" enctype="multipart/form-data">
+    <div class="cv-grid">
+        <input type="text" name="nombre_completo" placeholder="Nombre Completo" required>
+        <input type="email" name="email_contacto" placeholder="Correo Electrónico" required>
+    </div>
+    <div class="cv-grid">
+        <input type="tel" name="telefono" placeholder="Teléfono de Contacto" required>
+        <input type="text" name="puesto" placeholder="Puesto al que aspiras (Ej: Monitor)" required>
+    </div>
+    
+    <label for="cv-file" class="file-upload" style="display: block; cursor: pointer;">
+        <p>📁 Arrastra tu CV aquí o haz clic para buscar archivo (PDF, Word)</p>
+        <input type="file" name="curriculum" id="cv-file" style="display: none;" required>
+    </label>
 
-            <button type="submit" class="btn-cv">Enviar Candidatura</button>
-        </form>
+    <button type="submit" class="btn-cv">Enviar Candidatura</button>
+    </form>
     </section>
 
     <section class="map-section">
