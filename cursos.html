@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Online - Arcos Ayuda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="images/logo.jpg" alt="Logo Arcos Ayuda" class="main-logo">
+                <div class="brand-info">
+                    <span class="brand-name">Arcos Ayuda</span>
+                    <span class="brand-tagline">Asociación sin ánimo de lucro</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#quienes-somos">Quiénes Somos</a>
+                <a href="index.html#noticias">Noticias</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="animacion.html">Animación</a>
+                <a href="https://forms.gle/QQ1qUHER1cbRQQrj8" class="btn-socios">Hazte Socio</a>
+            </nav>
+        </div> 
+    </header>
+
+    <section class="cursos-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Formación Online</h1>
+            <p>Cursos con prácticas y formación especializada para el empleo.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="cursos-grid">
+            
+            <div class="curso-card" onclick="openModal('modal-sanidad')">
+                <div class="curso-image-placeholder">
+                    <img src="images/sanidad.jpg" alt="Sanidad">
+                </div>
+                <div class="curso-body">
+                    <h3>Sanidad</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-hosteleria')">
+                <div class="curso-image-placeholder">
+                    <img src="images/hosteleria.jpg" alt="Hostelería y Nutrición">
+                </div>
+                <div class="curso-body">
+                    <h3>Hostelería y Nutrición</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-sociosanitario')">
+                <div class="curso-image-placeholder">
+                    <img src="images/sociosanitario.jpg" alt="Servicios Sociosanitarios">
+                </div>
+                <div class="curso-body">
+                    <h3>Servicios Sociosanitarios</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-salud-mental')">
+                <div class="curso-image-placeholder">
+                    <img src="images/salud-mental.jpg" alt="Salud Mental e Igualdad">
+                </div>
+                <div class="curso-body">
+                    <h3>Salud Mental e Igualdad</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-animacion')">
+                <div class="curso-image-placeholder">
+                    <img src="images/animacion.jpg" alt="Animación y Ocio">
+                </div>
+                <div class="curso-body">
+                    <h3>Animación y Ocio</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-veterinaria')">
+                <div class="curso-image-placeholder">
+                    <img src="images/veterinaria.jpg" alt="Sanidad Veterinaria">
+                </div>
+                <div class="curso-body">
+                    <h3>Sanidad Veterinaria</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-edificacion')">
+                <div class="curso-image-placeholder">
+                    <img src="images/obra.jpg" alt="Edificación y Obra Civil">
+                </div>
+                <div class="curso-body">
+                    <h3>Edificación y Obra Civil</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-electricidad')">
+                <div class="curso-image-placeholder">
+                    <img src="images/electricidad.jpg" alt="Electricidad">
+                </div>
+                <div class="curso-body">
+                    <h3>Electricidad</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-psicomotricidad')">
+                <div class="curso-image-placeholder">
+                    <img src="images/psicomotricidad.jpg" alt="Psicomotricidad">
+                </div>
+                <div class="curso-body">
+                    <h3>Psicomotricidad</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-administracion')">
+                <div class="curso-image-placeholder">
+                    <img src="images/admin.jpg" alt="Administración y Gestión">
+                </div>
+                <div class="curso-body">
+                    <h3>Administración y Gestión</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-logistica')">
+                <div class="curso-image-placeholder">
+                    <img src="images/logistica.jpg" alt="Logística y Prevención">
+                </div>
+                <div class="curso-body">
+                    <h3>Logística y Prevención</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-educacion')">
+                <div class="curso-image-placeholder">
+                    <img src="images/educacion.jpg" alt="Educación Infantil">
+                </div>
+                <div class="curso-body">
+                    <h3>Educación Infantil</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+            <div class="curso-card" onclick="openModal('modal-imagen-personal')">
+                <div class="curso-image-placeholder">
+                    <img src="images/imagen-personal.png" alt="Imagen Personal">
+                </div>
+                <div class="curso-body">
+                    <h3>Imagen Personal</h3>
+                    <button class="btn-info">Ver Detalles</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="modal-sanidad" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-sanidad')">&times;</span>
+            <h2 class="modal-title-header">Sanidad</h2>
+            <ul class="modal-items-list">
+                <li>Auxiliar de enfermería (180H)</li>
+                <li>Auxiliar celador (80H)</li>
+                <li>Auxiliar dental (160H)</li>
+                <li>Auxiliar de farmacia (180H)</li>
+                <li>Actividades preventivas (120H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-hosteleria" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-hosteleria')">&times;</span>
+            <h2 class="modal-title-header">Hostelería y Nutrición</h2>
+            <ul class="modal-items-list">
+                <li>Manipulador de alimentos (50H)</li>
+                <li>Dietética y nutrición (150H)</li>
+                <li>Elaboración de dietas (50H)</li>
+                <li>Dietoterapia (120H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-sociosanitario" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-sociosanitario')">&times;</span>
+            <h2 class="modal-title-header">Servicios Sociosanitarios</h2>
+            <ul class="modal-items-list">
+                <li>Auxiliar de geriatría (180H)</li>
+                <li>Ayuda a domicilio (200H)</li>
+                <li>Atención Alzheimer (170H)</li>
+                <li>Teleasistencia (60H)</li>
+                <li>Coordinador de mayores (300H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-salud-mental" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-salud-mental')">&times;</span>
+            <h2 class="modal-title-header">Salud Mental e Igualdad</h2>
+            <ul class="modal-items-list">
+                <li>Auxiliar psiquiatría (200H)</li>
+                <li>Violencia de género (30H)</li>
+                <li>Iguales en diversidad (110H)</li>
+                <li>Las emociones (30H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-animacion" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-animacion')">&times;</span>
+            <h2 class="modal-title-header">Animación y Ocio</h2>
+            <ul class="modal-items-list">
+                <li>Monitor ocio y tiempo libre (100H)</li>
+                <li>Animador sociocultural (70H)</li>
+                <li>Monitor comedor escolar (70H)</li>
+                <li>Talleres educativos (60H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-veterinaria" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-veterinaria')">&times;</span>
+            <h2 class="modal-title-header">Sanidad Veterinaria</h2>
+            <ul class="modal-items-list">
+                <li>Auxiliar veterinario (100H)</li>
+                <li>Urgencias quirófano (100H)</li>
+                <li>Peluquería canina (70H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-edificacion" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-edificacion')">&times;</span>
+            <h2 class="modal-title-header">Edificación y Obra Civil</h2>
+            <ul class="modal-items-list">
+                <li>Construcción (50H)</li>
+                <li>Albañilería (40H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-electricidad" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-electricidad')">&times;</span>
+            <h2 class="modal-title-header">Electricidad</h2>
+            <ul class="modal-items-list">
+                <li>Electricidad (50H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-psicomotricidad" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-psicomotricidad')">&times;</span>
+            <h2 class="modal-title-header">Psicomotricidad</h2>
+            <ul class="modal-items-list">
+                <li>Técnico psicomotricidad (170H)</li>
+                <li>Psicomotricidad infantil (170H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-administracion" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-administracion')">&times;</span>
+            <h2 class="modal-title-header">Administración y Gestión</h2>
+            <ul class="modal-items-list">
+                <li>Auxiliar administrativo (100H)</li>
+                <li>Gestión administrativa (80H)</li>
+                <li>Contabilidad (90H)</li>
+                <li>Orientación laboral (50H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-logistica" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-logistica')">&times;</span>
+            <h2 class="modal-title-header">Logística y Prevención</h2>
+            <ul class="modal-items-list">
+                <li>Curso carretillero (50H)</li>
+                <li>Prevención riesgos laborales (60H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-educacion" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-educacion')">&times;</span>
+            <h2 class="modal-title-header">Educación Infantil</h2>
+            <ul class="modal-items-list">
+                <li>Auxiliar jardín de infancia (150H)</li>
+                <li>Didáctica educación infantil (40H)</li>
+                <li>Monitor educación especial (250H)</li>
+                <li>Técnico pedagogía Montessori (300H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-imagen-personal" class="modal-window">
+        <div class="modal-box">
+            <span class="modal-close-btn" onclick="closeModal('modal-imagen-personal')">&times;</span>
+            <h2 class="modal-title-header">Imagen Personal</h2>
+            <ul class="modal-items-list">
+                <li>Estética Integral (150H)</li>
+                <li>Peluquería y Estilismo (120H)</li>
+                <li>Maquillaje Profesional (80H)</li>
+                <li>Asesoría de Imagen (100H)</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <img src="images/imagen_circular_recortada.png" alt="Logo Arcos Ayuda" class="footer-logo">
+                <p>Asociación Arcos Ayuda<br>Unidos por nuestra gente.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>📍 Arcos de la Frontera, Cádiz</p>
+                <p>📧 arcosayuda11630@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/arcosayuda" target="_blank" class="social-link-item">
+                        <img src="images/instagram.png" alt="Instagram" class="social-icon-img">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/share/1CYYM3ZpWr/" target="_blank" class="social-link-item">
+                        <img src="images/facebook.png" alt="Facebook" class="social-icon-img">
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asociación Arcos Ayuda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden'; /* Evita scroll de la página de fondo */
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            document.body.style.overflow = 'auto'; /* Devuelve el scroll */
+        }
+
+        /* Cerrar modal automáticamente haciendo clic fuera de la caja blanca */
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-window')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
