@@ -1294,9 +1294,17 @@ h2 {
    8. REGLAS MULTIMEDIA (MEDIA QUERIES RESPONSIVE)
    ========================================================================== */
 @media (max-width: 768px) {
+   .header-container {
+        display: flex !important;
+        flex-direction: row !important; /* Mantiene el logo a la izquierda y el botón a la derecha */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
     /* Mostramos el botón de hamburguesa en móviles */
     .hamburger-button {
-        display: flex;
+        display: flex !important;
+       z-index: 1001;
     }
 
     /* Rediseñamos el menú para que actúe como persiana desplegable */
@@ -1587,7 +1595,7 @@ h2 {
 .hamburger-button span {
     width: 100%;
     height: 3px;
-    background-color: var(--primary); /* Usará tu magenta corporativo */
+    background-color: #0F172A !important; /* Forzamos un azul oscuro/negro para que resalte */
     border-radius: 2px;
     transition: var(--transition);
 }
