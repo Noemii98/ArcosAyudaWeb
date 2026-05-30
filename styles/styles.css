@@ -1294,9 +1294,74 @@ h2 {
    8. REGLAS MULTIMEDIA (MEDIA QUERIES RESPONSIVE)
    ========================================================================== */
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none;
+    /* Mostramos el botón de hamburguesa en móviles */
+    .hamburger-button {
+        display: flex;
     }
+
+    /* Rediseñamos el menú para que actúe como persiana desplegable */
+    .nav-menu {
+        display: none;             /* Oculto por defecto */
+        flex-direction: column;    /* Los botones se apilan hacia abajo */
+        width: 100%;               /* Ocupa todo el ancho */
+        background-color: var(--white);
+        position: absolute;        /* Se posiciona de forma flotante */
+        top: 100%;                 /* Justo debajo de la cabecera */
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(15, 23, 42, 0.05);
+        border-top: 1px solid #E2E8F0;
+        text-align: center;
+    }
+
+    /* Estilos para los enlaces del menú en modo desplegado */
+    .nav-menu a {
+        display: block;
+        padding: 12px 0;
+        margin-left: 0 !important; /* Eliminamos el espacio horizontal de PC */
+        font-size: 1rem;
+    }
+
+    /* Adaptación del botón Hazte Socio dentro del menú móvil */
+    .nav-menu .btn-socios {
+        display: inline-block;
+        margin: 10px auto 0 auto;  /* Centrado horizontal */
+        padding: 10px 24px;
+    }
+
+    /* LA MAGIA: Si el checkbox está marcado, mostramos el menú hacia abajo */
+    .menu-toggle-checkbox:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    /* EFECTO VISUAL OPCIONAL: Transforma las tres rayas en una "X" cuando está abierto */
+    .menu-toggle-checkbox:checked ~ .hamburger-button span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu-toggle-checkbox:checked ~ .hamburger-button span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle-checkbox:checked ~ .hamburger-button span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* Mantenemos tus grids y columnas adaptables de móvil intactos aquí abajo */
+    .about-grid, 
+    .contacto-grid, 
+    .cv-grid, 
+    .logos-grid, 
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    
+    .about-section, .news-section, .colaboradores, .social-feeds-section, .cursos-grid, .contacto-container, .cv-section, .animakids-section {
+        padding: 60px 6%;
+    }
+    
+    .contacto-header h1 { font-size: 2.2rem; }
+    .hero-content h1 { font-size: 2rem; }
+}
     
     .about-grid, 
     .contacto-grid, 
@@ -1501,4 +1566,28 @@ h2 {
 @keyframes pulseFb {
     from { transform: scale(1); }
     to { transform: scale(1.05); }
+}
+
+/* Ocultar el checkbox por defecto en ordenadores */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Estilos base para el botón hamburguesa (oculto en PC) */
+.hamburger-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+/* Las 3 líneas del botón */
+.hamburger-button span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary); /* Usará tu magenta corporativo */
+    border-radius: 2px;
+    transition: var(--transition);
 }
