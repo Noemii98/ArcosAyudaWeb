@@ -55,7 +55,7 @@
             </div>
 
             <div class="form-card">
-                <form class="main-form">
+                <form class="main-form" action="mailto:arcosayuda11630@gmail.com" method="post" enctype="text/plain">
                     <input type="text" placeholder="Tu Nombre" required>
                     <input type="email" placeholder="Tu Correo Electrónico" required>
                     <input type="text" placeholder="Asunto">
@@ -70,7 +70,7 @@
         <h2>Trabaja con Nosotros</h2>
         <p>¿Quieres formar parte de nuestro equipo de monitores o animadores? Déjanos tu CV.</p>
         
-        <form class="cv-form">
+        <form class="cv-form" action="mailto:coordinacionarcosayuda@gmail.com" method="post" enctype="multipart/form-data">
             <div class="cv-grid">
                 <input type="text" placeholder="Nombre Completo" required>
                 <input type="email" placeholder="Correo Electrónico" required>
@@ -80,10 +80,10 @@
                 <input type="text" placeholder="Puesto al que aspiras (Ej: Monitor)" required>
             </div>
             
-            <div class="file-upload">
-                <p>📁 Arrastra tu CV aquí o haz clic para buscar archivo (PDF, Word)</p>
-                <input type="file" style="display: none;" id="cv-file">
-            </div>
+            <label for="cv-file" class="file-upload" style="display: block; cursor: pointer;">
+            <p>📁 Arrastra tu CV aquí o haz clic para buscar archivo (PDF, Word)</p>
+            <input type="file" id="cv-file" style="display: none;" required>
+            </label>
 
             <button type="submit" class="btn-cv">Enviar Candidatura</button>
         </form>
